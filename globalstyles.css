@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Kalam;
+    src: url(./assets/fonts/Kalam/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: Kalam;
+    font-weight: bold;
+    src: url(./assets/fonts/Kalam/Kalam-Bold.ttf);
+}
+@font-face {
+    font-family: NotoSans;
+    src: url(./assets/fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: NotoEmoji;
+    src: url(./assets/fonts/Noto_Emoji/NotoEmoji-VariableFont_wght.ttf);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Times New Roman', NotoEmoji, Times, serif;
+}
+.bigmoji {
+    font-size: 5rem;
+}
+img { 
+    user-select: none;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+

@@ -2,11 +2,18 @@ html {
     background-color: black;
     color: white;
 }
-
+h3 {
+    all: unset;
+    font-size: 1.5rem;
+    display: block;
+}
 a {
     all: unset; 
     color: #f79e2a;
     cursor: pointer;
+}
+.big-rock {
+    font-size: 5rem;
 }
 
 a:hover {

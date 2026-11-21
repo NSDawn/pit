@@ -1,0 +1,70 @@
+html {
+    background-color: black;
+    color: white;
+}
+.sign {
+    border-radius: 1rem;
+    padding: 1rem;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    outline: solid 1px white;
+    position: relative;
+}
+.scrawl {
+    font-size: 0.75rem;
+    font-family: Kalam;
+}
+.scrawl.absolute {
+    position: absolute;
+}
+.scrawl.a {
+    right: 2rem;
+    top: 2rem;
+    transform: rotate(45deg)
+}
+.scrawl.b {
+    font-size: 0.5rem;
+    left: 20rem;
+    top: 10rem;
+    transform: rotate(3deg)
+}
+.huge {
+    font-size: 3rem;
+}
+ul {
+    margin: 0.25rem;
+    padding: 0rem 1.25rem;
+}
+h1 {
+    all: unset;
+    font-size: 2rem;
+    display: block;
+}
+h3 {
+    all: unset;
+    font-size: 1.5rem;
+    display: block;
+}
+a {
+    all: unset; 
+    color: #f79e2a;
+    cursor: pointer;
+}
+.big-rock {
+    font-size: 5rem;
+}
+a:hover {
+    color: #04e0b1;
+    text-decoration: underline 0.1rem solid;
+}
+
+
+div.notice {
+    background-color: black;
+    outline: white solid;
+    padding: 0.5rem;
+    position: absolute;
+    right: 4rem;
+    font-size: 0.5rem;
+    text-align: center;
+}

@@ -2,3 +2,14 @@ html {
     background-color: black;
     color: white;
 }
+
+a {
+    all: unset; 
+    color: #f79e2a;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #04e0b1;
+    text-decoration: underline 0.1rem solid;
+}

@@ -34,3 +34,31 @@ img {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
+
+div.achievement {
+    position: fixed;
+    right: 1rem; top: 1rem;
+    animation: notifyAchievement linear forwards 6s;
+    &.hidden {
+        visibility: hidden;
+    }
+}
+
+@keyframes notifyAchievement {
+    0% {
+        transform: translateX(150%);
+        filter: opacity(0);
+    }
+    8% {
+        transform: translateX(0%);
+        filter: opacity(1);
+    }
+    50% {
+        transform: translateX(0%);
+        filter: opacity(1);
+    }
+    100% {
+        transform: translateX(150%);
+        filter: opacity(0);
+    }
+}

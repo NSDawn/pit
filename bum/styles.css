@@ -97,6 +97,10 @@ section.four-things {
                 bottom: 0;
             }
         }
+        &.mountain {
+            background-image: url(assets/peam.JPG);
+            background-size: cover; 
+        }
         &.navigation {
             background-image: url(assets/mahjong/pixel-art-sunset.avif);
             background-size: cover;

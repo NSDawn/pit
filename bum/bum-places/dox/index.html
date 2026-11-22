@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the pit: example page</title>
+</head>
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" type="x-icon" href="./assets/favicon.png">
+<!-- fix every page -->
+<link rel="stylesheet" href="../../../globalstyles.css">
+<script src="../../../global.js"></script>
+<body>
+    <h3>Nishant's Doxxing Zone<sup>TM</sup></h3> 
+    📍 "Right over your shoulder"
+    <marquee behavior="" direction="">アナタノ　コンピューターノ　ショザイチハ　メイカクニ　ミアタリマシタ。オール　ユーア　ベース　アー　ビロング　ツー　アス。アコーディング　ター　オール　ノーン　ローズ　オブ　エービエーション　ゼア　イズ　ノー　ウェー　アー　ビー　シュッド　ビー　エーブル　ター　フライ。イッツ　ウィングズ　アー　トゥー　スモール　ター　ゲット　イッツ　ファット　リタル　ボディー　オフ　ザー　グラウンド。ザー　ビー、　オブ　コース、　フライズ　エニウェー　ベコズ　ビーズ　ドーント　ケア　ウォット　ヒューマンズ　シンク　イズ　インポシブル。</marquee>
+    <br />
+    <h2>Your IP: <span class="ip"></span></h2>
+    <h1>Your Location: <span class="location"></span></h1>
+    You are within 10 miles of <span class="latlong"></span>
+    <br>
+    <iframe id="map" title="Approximate Location Map" loading="lazy"></iframe>
+    <p>your hacked lol</p>
+    <a href="https://hackertyper.net/">open console</a>
+    <br>
+    <a href="../../">back</a>
+    <br><br><br><br><br>
+    <a href="https://info.flagcounter.com/aV1x"><img src="https://s05.flagcounter.com/countxl/aV1x/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_24/viewers_i+know+where+u+live/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+    <br><br>
+    <small>(this wepage is made with humorous intent. user data is not stored or used.)</small>
+    <script>
+        async function showApproxLocation() {
+            const e_ip_out = document.querySelector("span.ip");
+            const e_loc_out = document.querySelector("span.location");
+            const e_latlong_out = document.querySelector("span.latlong");
+            try {
+                // Example endpoint; check current CORS support, HTTPS availability,
+                // and rate limits before relying on any public provider.
+                const res = await fetch("https://ipapi.co/json/");
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                console.log(data);
+                e_ip_out.textContent = data.ip;
+                e_loc_out.textContent = `${data.city}, ${data.region}, ${data.country}`;
+                e_latlong_out.textContent = `(${data.latitude}, ${data.longitude})`;
+            
+                renderMap(data.latitude, data.longitude);
+
+                } catch (err) {
+                    e_ip_out.textContent = `Rip couldn't dox ☹️`;
+                    e_loc_out.textContent = `Rip couldn't dox ☹️`;
+                    e_latlong_out.textContent = `Rip couldn't dox ☹️`;
+                }
+            }
+
+        function renderMap(lat, long) {
+            const offset = 0.2;
+            const minLong = long - offset;
+            const minLat = lat - offset;
+            const maxLong = long + offset;
+            const maxLat = lat + offset;
+
+            const bbox = `${minLong},${minLat},${maxLong},${maxLat}`;
+            const marker = `${lat},${long}`;
+
+            document.getElementById("map").src =
+                `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${marker}`;
+        }
+        showApproxLocation();
+    </script>
+
+</body>
+</html>

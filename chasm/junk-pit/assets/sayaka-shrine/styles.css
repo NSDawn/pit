@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+    background: #000000;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+body {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.6rem;
+    background-image: url("./sayaka.png");
+    background-size: 2% auto;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    & > a {
+        all: unset; 
+        color: #612af7;
+        cursor: pointer;
+        &:hover {
+        color: #a52af7;
+        text-decoration: underline 0.1rem solid;
+    }
+    }
+}
+
+h1 { /* page header */
+    margin-bottom: 0;
+    font-family: "Brush Script MT", cursive;
+}
+
+h2, h3, h4 { /* for use in entry_dropdown_content */
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    background: #fcf4e7;
+}
+
+th {
+    text-align: left;
+    border-width: 2px;
+    border-bottom-width: 3px;
+}
+
+td {
+    vertical-align: top;
+    border-width: 2px;
+}
+
+th, td {
+    padding: 5px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.big_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: resize;
+}
+
+div {
+    opacity: 0.2;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.sayaka {
+    color: crimson;
+}
+
+a {
+    all: unset; 
+    color: #612af7;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover {
+    color: #a52af7;
+    text-decoration: underline 0.1rem solid;
+    }
+}
+
+a.leave {
+    position: absolute;
+    right: 10rem;
+    top: 50rem;
+}
+
+a.source {
+    position: absolute;
+    left: 50rem;
+    bottom: 20rem;
+}
+
+div.title {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    font-size: 1.5em;
+}

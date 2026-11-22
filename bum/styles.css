@@ -1,0 +1,121 @@
+html {
+    background-color: pink;
+    color: white;
+}
+@font-face {
+    font-family: MeaCulpa;
+    src: url(./assets/fonts/Mea_Culpa/MeaCulpa-Regular.ttf);
+}
+@font-face {
+    font-family: Sniglet;
+    src: url(./assets/fonts/Sniglet/Sniglet-Regular.ttf)
+}
+@font-face {
+    font-family: ZenKurenaido;
+    src: url(./assets/fonts/Zen_Kurenaido/ZenKurenaido-Regular.ttf)
+}
+@font-face {
+    font-family: RampartOne;
+    src: url(./assets/fonts/Rampart_One/RampartOne-Regular.ttf);
+}
+header {
+    background-color: purple;
+    text-align: center;
+    padding: 1rem;
+    outline: double white 0.1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem gray;
+    margin-bottom: 0.5rem;
+}
+section {
+    margin: 1rem 0;
+}
+body {
+    font-family: Sniglet, NotoEmoji, ZenKurenaido;
+    text-shadow: 1px 1px #2f03bd;
+    cursor: url("./assets/inuyasha-cursor.gif") 0 0, auto;
+    & a {
+        cursor: url("./assets/kagome-cursor.gif") 0 0, pointer;
+
+    }
+}
+h1 {
+    margin: 0;
+    font-family: MeaCulpa, 'Times New Roman', Times, serif;
+}
+section.subheader {
+    text-align: center;
+    & h2 {
+        margin: 0;
+        font-size: 1.75rem;
+        & img {
+            height: 1.75rem;
+        }
+    }
+}
+section.card {
+    background-image: url(assets/catsbg.png);
+    background-repeat: repeat;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem gray;
+    color: black;
+    text-shadow: 1px 1px #ffaaee;
+}
+section.four-things {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    & > div {
+        flex: 1;
+        min-width: 200px;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem gray;
+        padding: 1rem; 
+        & h3, h2, h1, p {
+            margin: 0.5rem 0;
+        }
+        &.banana-fish {
+            background-image: url(assets/banana-fish.webp);
+            background-size: cover;
+        }
+        &.anime-op {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #04e0b1;
+            position: relative;
+            & iframe {
+                border-radius: 1rem;
+                width: 100%;
+            }
+            & .dancer {
+                width: 25%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+marquee img {
+    box-shadow: 0.2rem 0.2rem 0.2rem gray;
+}
+h3 {
+    all: unset;
+    font-size: 1.5rem;
+    display: block;
+}
+a {
+    all: unset; 
+    color: #f79e2a;
+    cursor: pointer;
+}
+.big-rock {
+    font-size: 5rem;
+}
+a:hover {
+    color: #04e0b1;
+    text-decoration: underline 0.1rem solid;
+}

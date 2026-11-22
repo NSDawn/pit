@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the pit: example page</title>
+    <title>pit: Nishant's Doxxing Center</title>
 </head>
 <link rel="stylesheet" href="./styles.css">
 <link rel="icon" type="x-icon" href="./assets/favicon.png">
@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../../../globalstyles.css">
 <script src="../../../global.js"></script>
 <body>
-    <h3>Nishant's Doxxing Zone<sup>TM</sup></h3> 
+    <h3>Nishant's Doxxing Center<sup>TM</sup></h3> 
     📍 "Right over your shoulder"
     <marquee behavior="" direction="">アナタノ　コンピューターノ　ショザイチハ　メイカクニ　ミアタリマシタ。オール　ユーア　ベース　アー　ビロング　ツー　アス。アコーディング　ター　オール　ノーン　ローズ　オブ　エービエーション　ゼア　イズ　ノー　ウェー　アー　ビー　シュッド　ビー　エーブル　ター　フライ。イッツ　ウィングズ　アー　トゥー　スモール　ター　ゲット　イッツ　ファット　リタル　ボディー　オフ　ザー　グラウンド。ザー　ビー、　オブ　コース、　フライズ　エニウェー　ベコズ　ビーズ　ドーント　ケア　ウォット　ヒューマンズ　シンク　イズ　インポシブル。</marquee>
     <br />
@@ -34,8 +34,6 @@
             const e_loc_out = document.querySelector("span.location");
             const e_latlong_out = document.querySelector("span.latlong");
             try {
-                // Example endpoint; check current CORS support, HTTPS availability,
-                // and rate limits before relying on any public provider.
                 const res = await fetch("https://ipapi.co/json/");
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();

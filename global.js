@@ -4,9 +4,9 @@
 // https://skinmc.net/achievement
 
 function checkAchievementGrimyHands(v) {
-    if (localStorage.getItem('achievementGrimyHands') !== '1') {
-        if (localStorage.getItem('dirtyHands') === '1') {
-            localStorage.setItem('achievementGrimyHands', 1);
+    if (localStorage.getItem('pit.achievementGrimyHands') !== '1') {
+        if (localStorage.getItem('pit.dirtyHands') === '1') {
+            localStorage.setItem('pit.achievementGrimyHands', 1);
             notifyAchievement();
             console.log("Given achievement Grimy Hands")
         }
@@ -30,5 +30,5 @@ function notifyAchievement() {
 ## ## ## ## ## ## ## ## ## ## ## */ 
 
 function setDirtyHands(v) {
-    localStorage.setItem('dirtyHands', v);
+    localStorage.setItem('pit.dirtyHands', v);
 }

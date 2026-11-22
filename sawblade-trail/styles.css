@@ -19,7 +19,42 @@ a:hover {
     color: #04e0b1;
     text-decoration: underline 0.1rem solid;
 }
+.tree {
+    position: absolute;
+    & a {
+        display: block;
+        color: white;
+        &:hover {
+            text-decoration: none;
+            transform: scale(1.05);
+        }
+    }
+    &.a {
+        top: 1000px;
+        right: 6%;
+    }
+    &.b {
+        top: 2200px;
+        left: 20%;
+    }
+    &.c {
+        top: 2300px;
+        left: 25%;
+    }
+    &.d {
+        top: 4000px;
+        left: 40%;
+    }
+    &.e {
+        top: 1600px;
+        left: 75%;
+    }
+    &.f {
+        top: 2600px;
+        left: 67%
+    }
 
+}
 @keyframes godown {
     25% {
         transform: translateY(-0.1rem);

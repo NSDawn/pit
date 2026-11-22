@@ -1,6 +1,16 @@
 html {
-    background-color: black;
-    color: white;
+    font-size: 62.5%;
+    background: linear-gradient(#0cb0e2 0%, #03789c 15%, #062a8d 100%);
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 2vh;
+    outline: 1px solid white;
 }
 
 a {

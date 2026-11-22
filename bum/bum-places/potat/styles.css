@@ -1,0 +1,21 @@
+html {
+    background-color: burlywood;
+    color: black;
+}
+h3 {
+    all: unset;
+    font-size: 1.5rem;
+    display: block;
+}
+a {
+    all: unset; 
+    color: #452af7;
+    cursor: pointer;
+}
+.big-rock {
+    font-size: 5rem;
+}
+a:hover {
+    color: #e004e0;
+    text-decoration: underline 0.1rem solid;
+}

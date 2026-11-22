@@ -1,0 +1,53 @@
+html {
+    background: repeating-linear-gradient(red, orange 10%, yellow 20%, green 30%, blue 40%, indigo 50%, violet 60%);
+    background-size: cover;
+    color: white;
+    animation: woah 20s forwards infinite;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    all: unset;
+    font-size: 1.5rem;
+    display: block;
+}
+a {
+    all: unset; 
+    color: #f79e2a;
+    cursor: pointer;
+}
+a:hover {
+    color: #04e0b1;
+    text-decoration: underline 0.1rem solid;
+}
+img.planes {
+    width: 40vw;
+    animation: planes 10s infinite;
+}
+@keyframes planes {
+    0% {
+        transform: rotateZ(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg) rotateY(180deg);
+    }   
+    100% {
+        transform: rotateZ(360deg) rotateY(360deg);
+    
+    }
+}
+@keyframes woah {
+    0% {
+        filter: hue-rotate(0deg); 
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

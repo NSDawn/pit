@@ -1,0 +1,35 @@
+html {
+    background-color: black;
+    color: white;
+}
+h3 {
+    all: unset;
+    font-size: 1.5rem;
+    display: block;
+}
+a {
+    all: unset; 
+    color: #f79e2a;
+    cursor: pointer;
+}
+a:hover {
+    color: #04e0b1;
+    text-decoration: underline 0.1rem solid;
+}
+iframe {
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.iframe-cover {
+    z-index: 2; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+}

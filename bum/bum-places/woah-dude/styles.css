@@ -52,3 +52,8 @@ img.planes {
         filter: hue-rotate(360deg);
     }
 }
+div.sus {
+    position: absolute;
+    top: 20%;
+    left: 67%;
+}

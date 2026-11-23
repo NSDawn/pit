@@ -37,139 +37,16 @@ h2, h3, h4 { /* for use in entry_dropdown_content */
     margin: 0;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 3px;
-    background: #fcf4e7;
-}
-
-th {
-    text-align: left;
-    border-width: 2px;
-    border-bottom-width: 3px;
-}
-
-td {
-    vertical-align: top;
-    border-width: 2px;
-}
-
-th, td {
-    padding: 5px;
-    border-style: solid;
-    border-color: #000000;
-}
-
 .chasm {
     color: crimson;
 }
 
-.date_column {
-    width: 10rem;
-}
-
-.entry_date {
-    font-weight: bold;
-    color: #353535;
-}
-
-input.entry_dropdown {
-    display: none;
-}
-
-label.entry_dropdown {
-    position: relative;
-    display: block;
+a {
+    all: unset; 
+    color: #612af7;
     cursor: pointer;
-    font-weight: bold;
     &:hover {
-        text-decoration: underline;
-    }
-    color: #1f72f0;
-    &[type="anime"] {
-        color: #c40f96;
-    }
-}
-
-.entry_dropdown_content {
-    display: none;
-    border: 1px solid black;
-    padding: 3px 0px;
-    margin: 0px;
-    margin-top: 5px;
-    background: #ffffff;
-    font-family: "Tahoma", sans-serif;
-    font-size: 1.4rem;
-    & > div {
-        /* outline: black;
-        outline-style: solid;
-        outline-width: 1px; */
-        flex: 1;
-        padding: 0px 5px;
-    }
-    & > div:first-child {
-        border-right:1px solid#000000;
-    }
-    & > div:last-child {
-        min-width: 15rem;
-        flex: 0 0 auto;
-    }
-    & img {
-        width: 100%;
-    }
-    & iframe {
-        width: 100%;
-    }
-    & a {
-        all: unset; 
-        color: #612af7;
-        cursor: pointer;
-        &:hover {
         color: #a52af7;
         text-decoration: underline 0.1rem solid;
-        }
-    }
-    & strong {
-        color: #353535;
-    }
-}
-
-.entry_dropdown:checked~.entry_dropdown_content {
-    display: flex;
-}
-
-input.picture {
-    display: none;
-}
-
-label.picture {
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
-
-.picture:not(:checked)~label.picture>img {
-    border: 0.5px solid #aaaaaa;
-    &:hover {
-        opacity: 0.8;
-    }
-}
-
-.picture:checked~label.picture {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(30, 30, 30, 0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    transition: all 0.2s ease;
-    & > img {
-        max-width: 70vw;
-        max-height: 70vh;
-        object-fit: contain;
     }
 }

@@ -8,7 +8,7 @@ html {
 body {
     font-family: "Times New Roman", sans-serif;
     font-size: 1.6rem;
-    background-image: url("./sayaka.png");
+    background-image: url("./assets/sayaka.png");
     background-size: 2% auto;
     margin: 0 auto;
     min-height: 100vh;
@@ -94,14 +94,14 @@ a {
 
 a.leave {
     position: absolute;
-    right: 10rem;
-    top: 50rem;
+    right: 5%;
+    top: 55%;
 }
 
 a.source {
     position: absolute;
-    left: 50rem;
-    bottom: 20rem;
+    left: 27%;
+    bottom: 22%;
 }
 
 div.title {

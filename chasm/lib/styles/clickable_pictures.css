@@ -1,0 +1,42 @@
+/* ## ## ## ## ## ## ## ## ## ## ##
+##.CLICKABLE PICTURES            ## 
+## ## ## ## ## ## ## ## ## ## ## */
+
+/* 
+Example usage:
+<input id="image01" type="checkbox" class="picture" />
+<label for="image01" class="picture"><img src="./assets/1_hiiragi.png" alt="Nana Hiiragi"></label>
+*/
+
+input.picture {
+    display: none;
+}
+
+label.picture {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.picture:not(:checked)~label.picture>img {
+    border: 0.5px solid #aaaaaa;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.picture:checked~label.picture {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(30, 30, 30, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.2s ease;
+    & > img {
+        max-width: 70vw;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+}

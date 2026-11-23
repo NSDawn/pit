@@ -1,0 +1,42 @@
+/* ## ## ## ## ## ## ## ## ## ## ##
+##.DROPDOWNS            ## 
+## ## ## ## ## ## ## ## ## ## ## */
+
+/*
+Example usage:
+<input id="[entry01]" type="checkbox" class="entry_dropdown" />
+<label for="[entry01]" class="entry_dropdown">[Anime: Talentless Nana▼]</label>
+<div class="entry_dropdown_content">
+    [Content here]
+</div>
+*/
+
+input.entry_dropdown {
+    display: none;
+}
+
+label.entry_dropdown {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.6rem;
+}
+
+.entry_dropdown_content {
+    display: none;
+    border: 1px solid black;
+    padding: 3px 0px;
+    margin: 0px;
+    margin-top: 5px;
+    background: #ffffff;
+    font-family: "Tahoma", sans-serif;
+    font-size: 1.4rem;
+}
+
+.entry_dropdown:checked~.entry_dropdown_content {
+    display: block;
+}

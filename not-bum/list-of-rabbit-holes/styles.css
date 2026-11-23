@@ -1,0 +1,64 @@
+html {
+    --bg-color: #e7e1c8;
+    --card-bg-color: #e5d79f;
+    --text-color: #0e0101;
+    --a-color: #462dff;
+    --a-hover-color: #7f6efd;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+@font-face {
+    font-family: Cormorant;
+    src: url(assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
+}
+body {
+    font-family: Cormorant, NotoEmoji, 'Times New Roman', Times, serif;
+    
+    & header {
+        outline: dotted;
+        padding: 0.5rem; 
+        text-align: center;
+        & h1 {
+            margin: 0;
+        }
+    }
+    & main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem 0rem;
+        & > div {
+            padding: 1rem;
+            flex: 1;
+            min-width: 200px;
+            & ol, ul {
+                margin: 0.5rem 0;
+                padding: 0rem 1.25rem;
+                & li {
+                    margin: 0.25rem 0;
+                }
+            }
+            &.card {
+                border-radius: 1rem;
+                background-color: var(--card-bg-color);
+                outline: 0.1rem var(--text-color) dotted;
+            }
+        }
+        & h2, h3 {
+            margin: 0;
+        }
+        & p {
+            margin: 0.25rem 0;
+        }
+    }
+    & a {
+        all: unset;
+        color: var(--a-color);
+        transition: ease-in-out 0.25s;
+        cursor: pointer;
+        &:hover {
+            color: var(--a-hover-color);
+        }
+    }
+}
